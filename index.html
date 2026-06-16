@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peter Ristow, PhD — NGS Bioinformatics</title>
+<meta name="description" content="Roche Principal Scientist (NGS) & PhD. Reproducible RNA-seq, single-cell and variant-calling analysis — benchmarked and publication-ready.">
+<style>
+  :root{
+    --ink:#1a2233; --muted:#5b6678; --line:#e4e8ef; --bg:#f7f9fc; --card:#fff;
+    --brand:#1f5fa8; --accent:#2e8b57; --chip:#eef3fa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  header{background:linear-gradient(135deg,#13294b,#1f5fa8);color:#fff;padding:64px 0 56px}
+  header .wrap{display:block}
+  .name{font-size:2.1rem;font-weight:700;margin:0}
+  .tagline{font-size:1.25rem;margin:14px 0 0;color:#dce7f5;max-width:760px}
+  .sub{margin-top:18px;color:#b9cae0;font-size:.98rem}
+  .cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;background:#fff;color:var(--brand);padding:10px 18px;border-radius:8px;font-weight:600}
+  .btn.ghost{background:transparent;color:#fff;border:1px solid #ffffff66}
+  section{padding:46px 0}
+  h2{font-size:1.4rem;margin:0 0 6px}
+  .lead{color:var(--muted);margin:0 0 26px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;
+        display:flex;flex-direction:column;box-shadow:0 1px 2px #0b1f3a08}
+  .card h3{margin:0 0 8px;font-size:1.12rem}
+  .card p{margin:0 0 16px;color:var(--muted);font-size:.96rem;flex:1}
+  .metric{font-size:1.7rem;font-weight:700;color:var(--accent);line-height:1.1}
+  .metric small{display:block;font-size:.72rem;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .links{margin-top:16px;display:flex;gap:14px;font-size:.92rem;font-weight:600}
+  .chip{display:inline-block;background:var(--chip);color:var(--brand);font-size:.74rem;font-weight:600;
+        padding:3px 10px;border-radius:999px;margin-bottom:12px}
+  .repro{background:#0e1b2e;color:#e7eef8;border-radius:12px;padding:26px}
+  .repro code{display:block;background:#0a1422;color:#9fe3b4;padding:16px;border-radius:8px;
+              font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86rem;overflow:auto;margin-top:12px}
+  .feature{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .tool{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+        border-radius:10px;padding:20px}
+  .tool h3{margin:0 0 6px}
+  .todo{color:#b23;font-size:.82rem}
+  footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.92rem}
+  .pill{font-size:.8rem;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="name">Peter Ristow, PhD</p>
+    <p class="tagline">Roche Principal Scientist (NGS) &amp; PhD — I turn sequencing data into
+      clean, reproducible answers.</p>
+    <p class="sub">Bulk RNA-seq · single-cell · variant calling — benchmarked, documented, and
+      yours to re-run.</p>
+    <div class="cta">
+      <a class="btn" href="#work">See the work</a>
+      <a class="btn ghost" href="https://github.com/pgristow">GitHub @pgristow</a>
+      <a class="btn ghost" href="mailto:peterristow@gmail.com">Hire me</a>
+    </div>
+  </div>
+</header>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>I build the tools, not just run them</h2>
+    <p class="lead">Two shipped products that prove I engineer reliable scientific software.</p>
+    <div class="feature">
+      <div class="tool">
+        <h3>FORSTAT</h3>
+        <p class="pill">Published R/Shiny statistics application</p>
+        <p>A production statistics app used by researchers — interactive analysis with a real UI,
+           not a one-off script.</p>
+        <p class="todo">▶ TODO: add FORSTAT link / publication DOI here.</p>
+      </div>
+      <div class="tool">
+        <h3>LIMS run-booking system</h3>
+        <p class="pill">Laboratory information management</p>
+        <p>A sequencing run-booking system I designed and built — workflow, scheduling and data
+           capture for a working lab.</p>
+        <p class="todo">▶ TODO: add LIMS link / short description / screenshot here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="background:#eef2f8">
+  <div class="wrap">
+    <h2>Reproducible analysis, demonstrated in public</h2>
+    <p class="lead">Each project reanalyses real public data end-to-end. Click “live report” —
+      every figure is generated by code you can read and re-run.</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="chip">Variant calling · flagship</span>
+        <h3>Germline calling, proven correct</h3>
+        <p>bcftools &amp; GATK on GIAB HG002, benchmarked against the gold-standard truth set.
+           Most freelancers never benchmark — I give you the numbers.</p>
+        <div class="metric">99.9%<small>GATK SNP F1 vs GIAB truth</small></div>
+        <div class="links">
+          <a href="https://pgristow.github.io/variant-calling-giab-benchmark/">Live report →</a>
+          <a href="https://github.com/pgristow/variant-calling-giab-benchmark">Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="chip">Bulk RNA-seq</span>
+        <h3>Differential expression + driver analysis</h3>
+        <p>DESeq2 on the airway dexamethasone study, plus a multivariate variance-partition
+           analysis that ranks the <em>biggest effect drivers</em> — not just a gene list.</p>
+        <div class="metric">2 factors<small>donor vs treatment, partitioned</small></div>
+        <div class="links">
+          <a href="https://pgristow.github.io/rnaseq-deseq2-airway/">Live report →</a>
+          <a href="https://github.com/pgristow/rnaseq-deseq2-airway">Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="chip">Single-cell</span>
+        <h3>10x scRNA-seq to annotated cell types</h3>
+        <p>Scanpy QC → clustering → marker-driven annotation on pbmc3k, with an interactive UMAP
+           you can hover and explore.</p>
+        <div class="metric">7 lineages<small>annotated from raw counts</small></div>
+        <div class="links">
+          <a href="https://pgristow.github.io/scrnaseq-pbmc-scanpy/">Live report →</a>
+          <a href="https://github.com/pgristow/scrnaseq-pbmc-scanpy">Code</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="repro">
+  <div class="wrap">
+    <div class="repro">
+      <h2 style="color:#fff">Reproduce any of it in minutes</h2>
+      <p style="color:#b9cce4;margin:6px 0 0">Every project ships a conda environment, a Dockerfile,
+        and a CI badge that re-runs the whole pipeline on each push. No “works on my machine”.</p>
+      <code>git clone https://github.com/pgristow/variant-calling-giab-benchmark
+cd variant-calling-giab-benchmark
+conda env create -f environment.yml &amp;&amp; conda activate variant-call
+make all   # align → call → benchmark vs GIAB → report</code>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What I do for clients</h2>
+    <p class="lead">RNA-seq differential expression · single-cell analysis · variant calling &amp;
+      benchmarking · reproducible pipeline builds · reviewer-requested reanalysis &amp; figures.</p>
+    <p>Every engagement is delivered as a self-contained, reproducible report with publication-quality
+      figures, plain-English interpretation, and the code — work you can hand straight to a reviewer,
+      your boss, or a regulator. Production work runs on a private, hardened pipeline under NDA.</p>
+    <p style="margin-top:18px"><a class="btn" style="background:var(--brand);color:#fff"
+       href="mailto:peterristow@gmail.com">Start a project →</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Peter Ristow, PhD · Mossel Bay, South Africa ·
+    <a href="mailto:peterristow@gmail.com">peterristow@gmail.com</a> ·
+    <a href="https://github.com/pgristow">github.com/pgristow</a>
+  </div>
+</footer>
+
+</body>
+</html>
